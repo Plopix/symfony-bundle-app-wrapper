@@ -3,8 +3,7 @@
 This script helps you to automate a Symfony application installation around a
 bundle.
 
-It is useful when to want to automate an application deployment from a bundle
-repository.
+It is useful when to want to automate an application install or deployment from a bundle repository.
 
 It has been develop to boostrap an eZ Platform 2+ application locally and on Platform.sh 
 
