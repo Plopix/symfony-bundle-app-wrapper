@@ -3,8 +3,7 @@
 This script helps you to automate a Symfony application installation around a
 bundle.
 
-It is useful when to want to automate an application deployment from a bundle
-repository.
+It is useful when to want to automate an application install or deployment from a bundle repository.
 
 It has been develop to boostrap an eZ Platform 2+ application locally and on Platform.sh 
 
@@ -43,9 +42,9 @@ installez: ## Install eZ as the local project
 	@echo "\tenv(DATABASE_HOST)     -> 127.0.0.1"
 	@echo "\tenv(DATABASE_PORT)     -> 3366"
 	@echo "\tenv(DATABASE_PASSWORD) -> ezplatform"
-	@cd $(EZ_DIR) && COMPOSER_MEMORY_LIMIT=-1 composer update --lock
-	@cd $(EZ_DIR) && bin/console ezplatform:install clean
-	@cd $(EZ_DIR) && bin/console cache:clear
+	@cd ezplatform && COMPOSER_MEMORY_LIMIT=-1 composer update --lock
+	@cd ezplatform && bin/console ezplatform:install clean
+	@cd ezplatform && bin/console cache:clear
 ```
 
 
