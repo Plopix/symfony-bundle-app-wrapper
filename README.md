@@ -57,7 +57,7 @@ Then the deploy will looks like
 git clone YourAwesomeBundle.git
 composer create-project ezsystems/ezplatform --prefer-dist --no-progress --no-interaction --no-scripts
 curl -o tests/provisioning/wrap.php https://raw.githubusercontent.com/Plopix/symfony-bundle-app-wrapper/master/wrap-bundle.php
-WRAP_ROOT_DIR=./ezplatform php tests/provisioning/wrap.php
+WRAP_APP_DIR=./ezplatform php tests/provisioning/wrap.php
 cd ezplatform
 composer update --lock
 ```
